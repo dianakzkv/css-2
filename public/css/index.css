@@ -1,7 +1,13 @@
 .card > p {
-    color: rgba(0, 9, 183, 0.861)
+    color: rgba(0, 9, 183, 0.861);
 }
 
 * {
-    font-family: 'Playfair Display', serif;
+    /* font-family: 'Open Sans', sans-serif;
+    font-family: 'Playfair Display', serif; */
+    font-family: 'Roboto', sans-serif;
 }
+
+/* body {
+    font-family: 'Roboto', sans-serif;
+} */
