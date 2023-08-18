@@ -1,0 +1,86 @@
+<header class="header">
+	<div class="">
+		{{> logo}}
+	</div>
+	<nav class='header_nav'>
+		<div class="header_nav_right">
+		{{> nav list=header }}
+		</div>
+	</nav>
+</header>
+
+<main class="main">
+	<div class="info_block">
+		{{#with info}}
+			<h1 class="info_title">{{title}}</h1>
+			<p class="info_text">{{description}}</p>
+		{{/with}}
+	</div>
+	<div class="form_block">
+		{{#with form}}
+			<div class="inputs_list">
+				{{#each inputs}}
+				<input type="{{type}}" placeholder="{{placeholder}}">
+				{{/each}}
+			</div>
+
+			<div class="form_checkbox">
+				<input type="checkbox" name="{{checkbox.name}}" id="checkbox.name">
+				<label for="checkbox.name">{{checkbox.label}}</label>
+			</div>
+
+			<button>{{button}}</button>
+			<div class="hr"></div>
+			<p class="info">{{info}}</p>
+		{{/with}}
+	</div>
+</main>
+
+<div class="updates_block">
+	{{#with updates}}
+	<div class="upd_title">{{title}}</div>
+
+	{{#each list}}
+	<div class="card_upd">
+		<img src="https://picsum.photos/200" class="upd_image" alt="image">
+
+		<div class="content_upd">
+		
+			<p class="upd_nickname">@{{nickname}}</p>
+			<p class="upd_description">{{description}}</p>
+		</div>
+	</div>
+	{{/each}}
+
+	<a href="#" class="messages_link">All messages</a>
+	{{/with}}
+</div>
+
+<div class="expirience_block">
+	{{#with expirience}}
+		<h2 class="title_exp">{{title}}</h2>
+		<div class="cards_exp">
+			{{#each list}}
+				<div class="card_exp">
+					<h3>{{name}}</h3>
+					<p>{{details}}</p>
+				</div>
+			{{/each}}
+		</div>
+	{{/with}}
+</div>
+
+<footer class="footer">
+	<div>
+		{{> logo}}
+		<span class="footer_copyright">Copyright 2023</span>
+	</div>
+
+	{{#each footer}}
+		<div>
+		<span class="footer_title">{{title}}</span>
+		{{> nav list=links isVertical=true }}
+		</div>
+	{{/each}}
+</footer>
+
