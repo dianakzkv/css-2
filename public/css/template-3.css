@@ -336,3 +336,46 @@ body:hover .modal_block {
     opacity: 0.4;
     top: 900px;
 }
+
+.blog {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media all and (width <= 600px) {
+    .blog {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media all and (600px < width <= 800px) {
+    .blog {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.form {
+    gap: var(--space-l);
+}
+
+@media all and (width <= 560px) {
+    .form {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .form_info {
+        max-width: 300px;
+        width: 100%;
+        line-height: 150%;
+    }
+    .form_content {
+        align-items: center;
+        text-align: center;
+    }
+}
+
+/* .hero_conteiner {
+    container-type: size;
+} */
