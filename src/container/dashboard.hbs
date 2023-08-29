@@ -57,7 +57,7 @@
                     >
                         <span
                             class='icon nav-button__icon'
-                            style="background-image: url('/svg/navDashboard/home.svg');"
+                            style="background-image: url('/svg/dashboard/nav/home.svg');"
                         ></span>
                         <span
                             class='text text--light'
@@ -67,7 +67,7 @@
                     <a href='#' class='nav-button click'>
                         <span
                             class='icon nav-button__icon'
-                            style="background-image: url('/svg/navDashboard/orders.svg');"
+                            style="background-image: url('/svg/dashboard/nav/orders.svg');"
                         ></span>
                         <span
                             class='text text--light'
@@ -77,7 +77,7 @@
                     <a href='#' class='nav-button click'>
                         <span
                             class='icon nav-button__icon'
-                            style="background-image: url('/svg/navDashboard/products.svg');"
+                            style="background-image: url('/svg/dashboard/nav/products.svg');"
                         ></span>
                         <span
                             class='text text--light'
@@ -90,12 +90,127 @@
                 <div
                     class='layout header__content text--small'
                 >
-                    <input type='text' class='field' />
+                    <div class='header__search relative'>
+                        <input
+                            type='text'
+                            class='field field--header'
+                            placeholder='Search'
+                        />
+                        <span
+                            class='icon icon__header-search'
+                            style="background-image: url('/svg/dashboard/header/search.svg');"
+                        ></span>
+                        <span
+                            class='icon icon__header-settings icon--button icon--color-blue click'
+                            style="background-image: url('/svg/dashboard/header/settings.svg');"
+                        ></span>
+                    </div>
+
+                    <div class='header__buttons horisontal'>
+                        <span
+                            class='icon icon__header-buttons icon--button icon--color-yellow click'
+                            style="background-image: url('/svg/dashboard/header/signal.svg');"
+                        ></span>
+
+                        <span
+                            class='icon icon__header-buttons icon--button icon--color-blue-light click'
+                            style="background-image: url('/svg/dashboard/header/translate.svg');"
+                        ></span>
+
+                        <span
+                            class='icon icon__header-buttons icon--button icon--color-yellow click'
+                            style="background-image: url('/svg/dashboard/header/bell.svg');"
+                        ></span>
+                    </div>
                 </div>
             </header>
 
             <main class='main'>
-                xfgnhx
+                <div class='layout'>
+                    <section class='box analityc__block'>
+
+                        <div
+                            class='analityc analityc--double analityc--purple'
+                        >
+                            <span
+                                class='icon analityc__button icon--button icon--color-purple click'
+                                style="background-image: url('/svg/dashboard/analityc/money.svg');"
+                            ></span>
+                            <div
+                                class='relative vertical vertical--small'
+                            >
+                                <div
+                                    class='analityc__title text text--light text--bold'
+                                >$500.00</div>
+                                <div
+                                    class='text text--small text--light-gray'
+                                >Total earning</div>
+
+                                <span
+                                    class='icon analityc__arrow'
+                                    style="background-image: url('/svg/dashboard/analityc/purplearrow.svg');"
+                                ></span>
+                            </div>
+                        </div>
+
+                        <div
+                            class='analityc analityc--double analityc--blue'
+                        >
+                            <span
+                                class='icon analityc__button icon--button icon--color-blue click'
+                                style="background-image: url('/svg/dashboard/analityc/bag.svg');"
+                            ></span>
+                            <div
+                                class='vertical vertical--small'
+                            >
+                                <div
+                                    class='analityc__title text text--light text--bold'
+                                >$961</div>
+                                <div
+                                    class='text text--small text--light-gray'
+                                >Total Order</div>
+                            </div>
+                        </div>
+
+                        <div
+                            class='analityc analityc--horisontal analityc--blue'
+                        >
+                            <span
+                                class='icon analityc__button icon--button icon--color-blue click'
+                                style="background-image: url('/svg/dashboard/analityc/money.svg');"
+                            ></span>
+                            <div
+                                class='vertical vertical--small'
+                            >
+                                <div
+                                    class='analityc__title text text--medium text--light text--bold'
+                                >$961</div>
+                                <div
+                                    class='text text--small text--light-gray'
+                                >Total Order</div>
+                            </div>
+                        </div>
+
+                        <div
+                            class='analityc analityc--horisontal analityc--white'
+                        >
+                            <span
+                                class='icon analityc__button icon--button icon--color-yellow click'
+                                style="background-image: url('/svg/dashboard/analityc/shop.svg');"
+                            ></span>
+                            <div
+                                class='vertical vertical--small'
+                            >
+                                <div
+                                    class='analityc__title text text--medium text--bold'
+                                >$203k</div>
+                                <div
+                                    class='text text--small'
+                                >Total Income</div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
             </main>
         </div>
 
