@@ -2,7 +2,7 @@
 
     <head>
         <title>
-            Slack page
+            Dashboard
         </title>
 
         <meta charset='utf-8' />
@@ -126,7 +126,7 @@
             </header>
 
             <main class='main'>
-                <div class='layout'>
+                <div class='layout vertical'>
                     <section class='box analityc__block'>
 
                         <div
@@ -209,6 +209,267 @@
                                 >Total Income</div>
                             </div>
                         </div>
+                    </section>
+
+                    <section
+                        class='main__bottom horisontal horisontal--big'
+                    >
+                        <section
+                            class='box purchase__block'
+                        >
+                            <h2
+                                class='text text--heading text--bold'
+                            >Purchase list</h2>
+                            <hr class='divider' />
+                            <div
+                                class='purchase__row horisontal text'
+                            >
+                                <div
+                                    class='purchase__col vertical vertical--small'
+                                >
+                                    <p>ID437661</p>
+                                    <date>May 11, 2023,
+                                        14:21</date>
+                                </div>
+                                <div
+                                    class='purchase__col vertical vertical--small'
+                                >
+                                    <p>AirOn ProCam</p>
+                                    <p>7/8 USB Type-C</p>
+                                </div>
+                                <div
+                                    class='purchase__col vertical vertical--small'
+                                >
+                                    <p>132.32 EUR</p>
+                                    <p
+                                        class='text--error'
+                                    >Not paid</p>
+                                </div>
+                                <div
+                                    class='purchase__col vertical vertical--small'
+                                >
+                                    <p>Customer</p>
+                                    <email
+                                    >robin@com.de</email>
+                                </div>
+                            </div>
+                            <hr class='divider' />
+                            <div
+                                class='purchase__row horisontal text'
+                            >
+                                <div
+                                    class='purchase__col vertical vertical--small'
+                                >
+                                    <p>ID437662</p>
+                                    <date>May 11, 2023,
+                                        14:21</date>
+                                </div>
+                                <div
+                                    class='purchase__col vertical vertical--small'
+                                >
+                                    <p>PHILIPS Essential</p>
+                                    <p>HD9200/90</p>
+                                </div>
+                                <div
+                                    class='purchase__col vertical vertical--small'
+                                >
+                                    <p>543 USD</p>
+                                    <p
+                                        class='text--success'
+                                    >Pay by Stripe</p>
+                                </div>
+                                <div
+                                    class='purchase__col vertical vertical--small'
+                                >
+                                    <p>Customer</p>
+                                    <email
+                                    >dima@com.ua</email>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class='box payment__block'>
+                            <h2
+                                class='text text--heading text--bold'
+                            >Payment</h2>
+
+                            <hr class='divider' />
+
+                            <div
+                                class='vertical vertical--small'
+                            >
+                                <span>
+                                    <input
+                                        type='radio'
+                                        id='payment1'
+                                        name='payment'
+                                        class='click'
+                                    />
+                                    <label
+                                        for='payment1'
+                                        class='click'
+                                    >Credit card</label>
+                                </span>
+                                <span>
+                                    <input
+                                        type='radio'
+                                        id='payment2'
+                                        name='payment'
+                                        class='click'
+                                    />
+                                    <label
+                                        for='payment2'
+                                        class='click'
+                                    >Debit card</label>
+                                </span>
+                                <span>
+                                    <input
+                                        type='radio'
+                                        id='payment3'
+                                        name='payment'
+                                        class='click'
+                                    />
+                                    <label
+                                        for='payment3'
+                                        class='click'
+                                    >PayPal</label>
+                                </span>
+                            </div>
+
+                            <div
+                                class='payment__field horisontal'
+                            >
+                                <div
+                                    class='payment__field-item vertical vertical--small'
+                                >
+                                    <label for='name'>Name
+                                        on card</label>
+                                    <input
+                                        type='text'
+                                        id='name'
+                                        class='field payment__form-input'
+                                    />
+                                </div>
+
+                                <div
+                                    class='vertical vertical--small'
+                                >
+                                    <label for='card'>Credit
+                                        card number</label>
+                                    <input
+                                        type='text'
+                                        id='card'
+                                        class='field payment__form-input'
+                                    />
+                                </div>
+
+                                <div
+                                    class='vertical vertical--small'
+                                >
+                                    <label
+                                        for='expiration'
+                                    >Expiration</label>
+                                    <input
+                                        type='text'
+                                        id='expiration'
+                                        class='field payment__form-input'
+                                    />
+                                </div>
+
+                                <div
+                                    class='vertical vertical--small'
+                                >
+                                    <label
+                                        for='cvv'
+                                    >CVV</label>
+                                    <input
+                                        type='text'
+                                        id='cvv'
+                                        class='field payment__form-input'
+                                    />
+                                </div>
+
+                            </div>
+
+                            <hr class='divider' />
+
+                            <div
+                                class='payment__choose horisontal'
+                            >
+                                <div
+                                    class='vertical vertical--small'
+                                >
+                                    <label>Country</label>
+                                    <div
+                                        class='field field--select click'
+                                    >
+                                        <span
+                                            class='text'
+                                        >Choose...</span>
+                                        <select
+                                            class='field__select'
+                                        >
+                                            <option
+                                                value='uk'
+                                            >Ukraine</option>
+                                            <option
+                                                value='us'
+                                            >USA</option>
+                                            <option
+                                                value='pl'
+                                            >Poland</option>
+                                            <option
+                                                value='ch'
+                                            >China</option>
+                                        </select>
+                                        <span
+                                            class='icon field__icon'
+                                            style="background-image: url('/svg/dashboard/arrowForChoose.svg');"
+                                        ></span>
+                                    </div>
+                                </div>
+
+                                <div
+                                    class='vertical vertical--small'
+                                >
+                                    <label>State</label>
+                                    <div
+                                        class='field field--select relative click'
+                                    >
+                                        <span
+                                            class='text'
+                                        >Choose...</span>
+                                        <select
+                                            class='field__select'
+                                        >
+                                            <option
+                                                value='od'
+                                            >Odesa</option>
+                                            <option
+                                                value='ch'
+                                            >Chicago</option>
+                                            <option
+                                                value='kr'
+                                            >Krakow</option>
+                                            <option
+                                                value='pn'
+                                            >Pekin</option>
+                                        </select>
+                                        <span
+                                            class='icon field__icon'
+                                            style="background-image: url('/svg/dashboard/arrowForChoose.svg');"
+                                        ></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr class='divider' />
+
+                            <a
+                                href='#'
+                                class='payment__button button click text text--light text--line'
+                            >Continue to checkout</a>
+                        </section>
                     </section>
                 </div>
             </main>
