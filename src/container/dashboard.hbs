@@ -1,0 +1,218 @@
+<html>
+
+    <head>
+        <title>
+            Slack page
+        </title>
+
+        <meta charset='utf-8' />
+
+        <link
+            rel='apple-touch-icon'
+            sizes='180x180'
+            href='/fav/apple-touch-icon.png'
+        />
+        <link
+            rel='icon'
+            type='image/png'
+            sizes='32x32'
+            href='/fav/favicon-32x32.png'
+        />
+        <link
+            rel='icon'
+            type='image/png'
+            sizes='16x16'
+            href='/fav/favicon-16x16.png'
+        />
+        <link rel='manifest' href='/fav/site.webmanifest' />
+        <link
+            rel='mask-icon'
+            href='/fav/safari-pinned-tab.svg'
+            color='#5bbad5'
+        />
+
+        <link href='css/normalize.css' rel='stylesheet' />
+
+        <link href='css/dashboard.css' rel='stylesheet' />
+
+        <meta
+            name='viewport'
+            content='viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no'
+        />
+
+    </head>
+
+    <body>
+
+        <div class='page page--dashboard'>
+
+            <aside class='page__aside aside vertical'>
+                <div class='aside__logo text'>
+                    Sidebar
+                </div>
+                <nav class='vertical vertical--small'>
+                    <a
+                        href='#'
+                        class='nav-button nav-button--active click'
+                    >
+                        <span
+                            class='icon nav-button__icon'
+                            style="background-image: url('/svg/dashboard/nav/home.svg');"
+                        ></span>
+                        <span
+                            class='text text--light'
+                        >Home</span>
+                    </a>
+
+                    <a href='#' class='nav-button click'>
+                        <span
+                            class='icon nav-button__icon'
+                            style="background-image: url('/svg/dashboard/nav/orders.svg');"
+                        ></span>
+                        <span
+                            class='text text--light'
+                        >Orders</span>
+                    </a>
+
+                    <a href='#' class='nav-button click'>
+                        <span
+                            class='icon nav-button__icon'
+                            style="background-image: url('/svg/dashboard/nav/products.svg');"
+                        ></span>
+                        <span
+                            class='text text--light'
+                        >Products</span>
+                    </a>
+                </nav>
+            </aside>
+
+            <header class='header'>
+                <div
+                    class='layout header__content text--small'
+                >
+                    <div class='header__search relative'>
+                        <input
+                            type='text'
+                            class='field field--header'
+                            placeholder='Search'
+                        />
+                        <span
+                            class='icon icon__header-search'
+                            style="background-image: url('/svg/dashboard/header/search.svg');"
+                        ></span>
+                        <span
+                            class='icon icon__header-settings icon--button icon--color-blue click'
+                            style="background-image: url('/svg/dashboard/header/settings.svg');"
+                        ></span>
+                    </div>
+
+                    <div class='header__buttons horisontal'>
+                        <span
+                            class='icon icon__header-buttons icon--button icon--color-yellow click'
+                            style="background-image: url('/svg/dashboard/header/signal.svg');"
+                        ></span>
+
+                        <span
+                            class='icon icon__header-buttons icon--button icon--color-blue-light click'
+                            style="background-image: url('/svg/dashboard/header/translate.svg');"
+                        ></span>
+
+                        <span
+                            class='icon icon__header-buttons icon--button icon--color-yellow click'
+                            style="background-image: url('/svg/dashboard/header/bell.svg');"
+                        ></span>
+                    </div>
+                </div>
+            </header>
+
+            <main class='main'>
+                <div class='layout'>
+                    <section class='box analityc__block'>
+
+                        <div
+                            class='analityc analityc--double analityc--purple'
+                        >
+                            <span
+                                class='icon analityc__button icon--button icon--color-purple click'
+                                style="background-image: url('/svg/dashboard/analityc/money.svg');"
+                            ></span>
+                            <div
+                                class='relative vertical vertical--small'
+                            >
+                                <div
+                                    class='analityc__title text text--light text--bold'
+                                >$500.00</div>
+                                <div
+                                    class='text text--small text--light-gray'
+                                >Total earning</div>
+
+                                <span
+                                    class='icon analityc__arrow'
+                                    style="background-image: url('/svg/dashboard/analityc/purplearrow.svg');"
+                                ></span>
+                            </div>
+                        </div>
+
+                        <div
+                            class='analityc analityc--double analityc--blue'
+                        >
+                            <span
+                                class='icon analityc__button icon--button icon--color-blue click'
+                                style="background-image: url('/svg/dashboard/analityc/bag.svg');"
+                            ></span>
+                            <div
+                                class='vertical vertical--small'
+                            >
+                                <div
+                                    class='analityc__title text text--light text--bold'
+                                >$961</div>
+                                <div
+                                    class='text text--small text--light-gray'
+                                >Total Order</div>
+                            </div>
+                        </div>
+
+                        <div
+                            class='analityc analityc--horisontal analityc--blue'
+                        >
+                            <span
+                                class='icon analityc__button icon--button icon--color-blue click'
+                                style="background-image: url('/svg/dashboard/analityc/money.svg');"
+                            ></span>
+                            <div
+                                class='vertical vertical--small'
+                            >
+                                <div
+                                    class='analityc__title text text--medium text--light text--bold'
+                                >$961</div>
+                                <div
+                                    class='text text--small text--light-gray'
+                                >Total Order</div>
+                            </div>
+                        </div>
+
+                        <div
+                            class='analityc analityc--horisontal analityc--white'
+                        >
+                            <span
+                                class='icon analityc__button icon--button icon--color-yellow click'
+                                style="background-image: url('/svg/dashboard/analityc/shop.svg');"
+                            ></span>
+                            <div
+                                class='vertical vertical--small'
+                            >
+                                <div
+                                    class='analityc__title text text--medium text--bold'
+                                >$203k</div>
+                                <div
+                                    class='text text--small'
+                                >Total Income</div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </main>
+        </div>
+
+    </body>
+</html>
