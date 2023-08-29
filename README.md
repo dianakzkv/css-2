@@ -12,3 +12,9 @@
       <img src="https://i.ibb.co/0ZbmKhX/3.png" >
 </p>
 
+# Dashboard
+
+<p align="center">
+      <img src="https://i.ibb.co/r2z7TF3/dashboard.png" >
+</p>
+
