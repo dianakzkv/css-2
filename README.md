@@ -34,5 +34,5 @@
 
 <p align="center">
       <img src="https://i.ibb.co/tcwMXYG/template-7.png" >
-      <img src="https://i.ibb.co/tcwMXYG/template-7-1.png" >
+      <img src="https://i.ibb.co/mSr6D1b/template-7-1.png" >
 </p>
