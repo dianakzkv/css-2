@@ -1,0 +1,80 @@
+<div class='page_content'>
+
+	{{#with header}}
+    	<div class="header__block">
+			<header class='header'>
+						<div class='logo'>
+							<span class='badge text'>{{brandName}}</span>
+						</div>
+			
+						<nav class='header_nav'>
+							<div class="header_nav_right">
+								{{> nav list=links}}
+							</div>
+						</nav>
+			</header>
+			
+			<div class="hr"></div>
+
+			<div class="add__block header">
+				{{!-- ::before absolute position badge --}}
+				<span class="logo_add">Ad</span>
+				{{#with ad}}
+					<a href="{{url}}" class="link__add text">{{text}}</a>
+				{{/with}}
+
+				<p class="text">Users online: {{userOnline}}</p>
+			</div>
+		</div>
+	{{/with}}
+
+	<div class="hero__block hero__container card">
+		{{#with hero}}
+			<h1 class="text text--title">{{title}}</h1>
+			<p class="text text--description">{{description}}</p>
+
+			{{#with button}}
+				<a href="{{url}}" class="button button--primary text text--button">
+			{{text}}</a>{{/with}}
+		{{/with}}
+	</div>
+
+	<div class="about__block">
+		{{#with about}}
+			<h2 class="text title--secondary">{{heading}}</h2>
+			<p class="text tetx--about">{{info}}</p>
+		{{/with}}
+	</div>
+
+    <main class='main'>
+		<div class="header">
+			<h2 class="text title--secondary">Our Articles</h2>
+			<a href="{{url}}" class="button button-border text">View All</a>
+		</div>
+
+		<section class="articles__block">
+			{{#each articles}}
+			<div class="article__card">
+				<img src="{{photo}}" alt="photo" class="img__article">
+				<h3 class="text title--article">{{name}}</h3>
+				<p class="text text--article">{{description}}</p>
+				<a href="#readaArticle" class="button button--article text">Read All</a>
+			</div>
+			{{/each}}
+		</section> 
+    </main>
+
+
+    <footer class='footer'>
+		{{!-- <div class="hr"></div> --}}
+        {{#with footer}}
+			<div class="footer__link">
+				{{#each pages}}
+					<a href="{{path}}" class="text link">{{name}}</a>
+				{{/each}}
+			</div>
+			<p class="text tetx--about">{{copyright}}</p>
+		{{/with}}
+    </footer>
+
+</div>
